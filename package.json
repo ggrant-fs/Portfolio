@@ -45,7 +45,7 @@
   "description": "Creative is a stylish one page HTML theme built with Bootstrap.",
   "devDependencies": {
     "autoprefixer": "10.0.1",
-    "browser-sync": "2.26.13",
+    "browser-sync": "^2.26.14",
     "chokidar": "3.4.3",
     "concurrently": "5.3.0",
     "postcss": "8.1.4",
