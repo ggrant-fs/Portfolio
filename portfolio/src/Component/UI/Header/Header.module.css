@@ -1,0 +1,13 @@
+.headerContainer{
+    display:flex;
+    position:fixed;
+    top:0;
+    left:0;
+    width:70px;
+    height:100vh;
+    background-color: transparent;
+}
+
+.headerContainer:hover{
+    background-color: rgb(188, 156, 75);
+}
