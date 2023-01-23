@@ -3,11 +3,14 @@
     position:fixed;
     top:0;
     left:0;
-    width:70px;
-    height:100vh;
+    width:2.38rem;
+    height:100vw;
     background-color: transparent;
+    opacity: 0;
 }
 
 .headerContainer:hover{
-    background-color: rgb(188, 156, 75);
+   opacity: 1;
+   transition: opacity 800ms ease-out;
+   background-color: rgb(46, 13, 13);
 }

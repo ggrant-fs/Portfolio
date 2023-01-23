@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import styles from './Hero.module.css';
-import backgroundVideo from '../../../videos/inkInWater.mp4';
+import backgroundVideo from '../../../videos/inkinwater.mp4';
 
 
 function Hero(props){
