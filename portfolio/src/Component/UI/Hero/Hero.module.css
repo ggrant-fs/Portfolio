@@ -1,7 +1,12 @@
+.videoContainer,
 .video{
     position: relative;
     height:100%;
     width:100%;
+    
+}
+
+.videoContainer{
     z-index: -20;
 }
 

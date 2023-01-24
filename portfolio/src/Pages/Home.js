@@ -1,11 +1,10 @@
+import { Fragment } from 'react';
 import Hero from '../Component/UI/Hero/Hero';
-import Header from '../Component/UI/Header/Header';
 function Home(props){
     return(
-         <div>
-            <Header/>
+        <Fragment>
             <Hero />
-         </div>
+       </Fragment>
     )
 }
 
