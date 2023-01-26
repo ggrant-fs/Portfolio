@@ -17,9 +17,17 @@
 }
 
 .menuBar{
-    background-color: rgb(82, 27, 27);
+    background-color: #521b1b;
     height:.22rem;
     width:1.88rem;
     margin-top: .19rem;
     cursor: pointer;
+}
+
+.menuBar:hover{
+   opacity:.5;
+   transition: opacity 500 ease-in;
+   width:2.0rem;
+   transition-duration: 0.8s;
+   background-color: #f47777;
 }

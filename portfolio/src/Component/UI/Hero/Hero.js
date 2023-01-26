@@ -8,8 +8,8 @@ function Hero(props){
         <Fragment>
           <Header/>
           <div className={styles.videoContainer}>
-           <video className={styles.video} autoPlay muted loop>
-             <source src={backgroundVideo} type='video/mp4'/>
+           <video autoPlay muted loop>
+             <source className={styles.source} src={backgroundVideo} type='video/mp4'/>
            </video>
           </div>
        </Fragment>
