@@ -5,13 +5,27 @@
     align-items: center;
     height:100%;
     width:100%;
-    background-color: #691c1c99;
+    background: linear-gradient( to bottom, #691c1c99, black)
 }
 
+.open{
+    transform: translateX(0) !important;
+}
+.active{
+    text-decoration: underline;
+
+}
+
+.navItem:nth-child(2){
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .navItem{
     list-style: none;
-    font-size: 60px;
+    font-size: 50px;
+    /* margin-top: 30px; */
     text-align: center;
+    font-family: 'Syncopate', sans-serif;
 }
 
 .navItem > a {
@@ -19,4 +33,5 @@
     color:rgba(170, 165, 165, 0.907);
     cursor: pointer;
 }
+
 
