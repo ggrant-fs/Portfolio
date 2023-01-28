@@ -21,7 +21,7 @@ function Hero(props){
     return(
         <Fragment>
           <Header renderNav={displayNav}/>
-          {!showNav && <Nav/>}
+          {showNav && <Nav/>}
           <div className={styles.videoContainer}>
            <video autoPlay muted loop>
              <source className={styles.source} src={backgroundVideo} type='video/mp4'/>
