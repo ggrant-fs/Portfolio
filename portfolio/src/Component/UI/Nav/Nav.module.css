@@ -1,6 +1,7 @@
 .fullpageNav{
     display: flex;
     position: fixed;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height:100%;
@@ -30,7 +31,20 @@ a > h4 {
     margin:0;
 }
 
-.socialLinks{
-    display:flex;
+.socialLinksContainer{
+  margin-top: 20px;
+  padding-top:20px;
 }
 
+
+.socalLink{
+    display:inline-block;
+    margin-left: 15px;
+}
+
+
+.socalLink > a{
+    color:rgba(170, 165, 165, 0.907);
+    text-decoration: underline solid .5px;
+    font-family: 'Syncopate', sans-serif;
+}
