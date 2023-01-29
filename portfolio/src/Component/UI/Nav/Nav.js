@@ -28,12 +28,12 @@ const Nav=(props)=> {
             <div className={styles.socialLinksContainer}>
               <ul className={styles.socalLinks}>
                 <li className={styles.socalLink}>
-                  <Link to="/https://github.com/ggrant-fs">
+                  <Link to={{pathname:"/https://github.com/ggrant-fs"}} target="_blank">
                   <span>LinkedIn</span>
                   </Link>
                 </li>
                 <li className={styles.socalLink}>
-                  <Link to='/https://github.com/ggrant-fs'>
+                  <Link to={{pathname:"/https://github.com/ggrant-fs"}} target="_blank">
                     <snan>GitHub</snan>
                  </Link>
                 </li>
