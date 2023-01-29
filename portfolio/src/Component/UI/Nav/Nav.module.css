@@ -27,15 +27,19 @@
 .navItem > a {
     text-decoration: none;
     color:rgba(170, 165, 165, 0.907);
-    /* cursor: pointer; */
 }
 
 
 a > h4 {
     margin:0;
 }
-.navList > li.navItem > a >h4:hover{
-    color:green;
+
+.socialLinks{
+  
+}
+
+span{
+    color:white;
 }
 
 
