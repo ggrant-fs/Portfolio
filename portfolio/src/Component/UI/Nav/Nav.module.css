@@ -9,7 +9,6 @@
 }
 
 
-
 .navItem:nth-child(2){
     margin-top: 20px;
     margin-bottom: 20px;
@@ -20,9 +19,6 @@
     text-align: center;
     font-family: 'Syncopate', sans-serif;
 }
-
-
-
 
 .navItem > a {
     text-decoration: none;
@@ -35,12 +31,6 @@ a > h4 {
 }
 
 .socialLinks{
-  
+    display:flex;
 }
-
-span{
-    color:white;
-}
-
-
 

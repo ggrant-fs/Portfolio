@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import {Link} from 'react-router-dom';
 import styles from './Nav.module.css';
 
-function Nav(props) {
+const Nav=(props)=> {
 
    return(
      <Fragment>
@@ -14,8 +14,9 @@ function Nav(props) {
                 <li className={styles.navItem}><Link activeClassName={styles.active}><h4>About Me</h4> </Link></li>
             </ul>
             <div className={styles.socialLinks}>
-              <span><Link>LinkedIn</Link></span>
-              <span><Link>GitHub</Link></span>
+              <ul>
+                <li><Link>test link</Link></li>
+              </ul>
             </div>
         </div>
      </Fragment>
