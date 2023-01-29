@@ -1,5 +1,6 @@
+import React from 'react';
 import { Fragment } from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styles from './Nav.module.css';
 
 function Nav (props) {
@@ -8,9 +9,9 @@ function Nav (props) {
      <Fragment>
         <div className={`${styles.fullpageNav} ${styles.openNav}`}>
             <ul className={styles.navlist}>
-                <li className={styles.navItem}><NavLink activeClassName={styles.active}>Featured Work</NavLink></li>
-                <li className={styles.navItem}><NavLink activeClassName={styles.active}>Portfolio</NavLink></li>
-                <li className={styles.navItem}><NavLink activeClassName={styles.active}>About Me</NavLink></li>
+                <li className={styles.navItem}><Link activeClassName={styles.active}><h4>Featured Work</h4></Link></li>
+                <li className={styles.navItem}><Link activeClassName={styles.active}><h4>Portfolio</h4></Link></li>
+                <li className={styles.navItem}><Link activeClassName={styles.active}><h4>About Me</h4> </Link></li>
             </ul>
         </div>
      </Fragment>

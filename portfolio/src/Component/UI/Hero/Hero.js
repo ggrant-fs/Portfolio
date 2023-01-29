@@ -1,4 +1,5 @@
-import { Fragment,useState } from 'react';
+import React from 'react';
+import { Fragment ,useState } from 'react';
 import styles from './Hero.module.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
