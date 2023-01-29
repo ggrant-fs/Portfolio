@@ -1,3 +1,4 @@
+import React from 'react';
 import { Fragment } from 'react';
 import Hero from '../Component/UI/Hero/Hero';
 function Home(props){
