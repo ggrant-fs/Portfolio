@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom';
 import styles from './Nav.module.css';
 
 const Nav=(props)=> {
-
+   const renderNav = props.renderNav;
+   const openNav = !renderNav ?'': '.open';
    return(
      <Fragment>
         <div className={styles.fullpageNav}>
@@ -15,12 +16,12 @@ const Nav=(props)=> {
                   </Link>
                 </li>
                 <li className={styles.navItem}>
-                  <Link to="#" activeClassName={styles.active}>
+                  <Link to="/projects" activeClassName={styles.active}>
                     <h4>Portfolio</h4>
                   </Link>
                 </li>
                 <li className={styles.navItem}>
-                  <Link to="#" activeClassName={styles.active}>
+                  <Link to="/about" activeClassName={styles.active}>
                     <h4>About Me</h4>
                   </Link>
                 </li>
