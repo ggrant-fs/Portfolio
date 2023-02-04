@@ -1,0 +1,62 @@
+.fullpageNav{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    background: linear-gradient( to bottom, #92666699, black);
+    z-index: 9;
+}
+
+
+.navItem:nth-child(2){
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.navItem{
+    list-style: none;
+    text-align: center;
+    font: 3.13rem 'Syncopate', sans-serif;
+}
+
+.navItem > a {
+    text-decoration: none;
+    color:rgba(170, 165, 165, 0.907);
+    transition-property: font;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.navItem > a:hover {
+   color: rgb(248, 245, 245);
+   font-size: 3.6rem;
+   text-decoration: underline 0.13rem;
+}
+
+a > h4 {
+    margin:0;
+}
+
+.socialLinksContainer{
+  margin-top: 1.25rem;
+  padding-top:1.25rem;
+}
+
+
+.socalLink{
+    display:inline-block;
+    margin-left: 0.94rem;
+}
+
+
+.socalLink > a{
+    color:rgba(170, 165, 165, 0.907);
+    text-decoration: underline solid .5px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.socalLink > a:hover {
+    color: rgb(248, 245, 245);
+}
