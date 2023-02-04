@@ -3,6 +3,12 @@
 @import 'abstracts/placeholders.module';
 @import 'abstracts/variables.module';
 
+@import 'base/typography.module';
+
+@import 'layout/Header.module';
+@import 'layout/Hero.module';
+@import 'layout/Nav.module';
+
 @import 'pages/AboutMe.module';
 @import 'pages/Home.module';
 @import 'pages/projects.module';
