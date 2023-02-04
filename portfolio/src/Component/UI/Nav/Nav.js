@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 import styles from './Nav.module.css';
 
 const Nav=(props)=> {
-   const renderNav = props.renderNav;
-   const openNav = !renderNav ?'': '.open';
    return(
      <Fragment>
         <div className={styles.fullpageNav}>
