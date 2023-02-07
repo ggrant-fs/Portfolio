@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from  './Header.module.css';
+// import styles from  './Header.module.css';
+import '../../../index.css';
 import {Fragment} from 'react';
 
 function Header(props){
@@ -8,11 +9,11 @@ function Header(props){
 
     return (
       <Fragment>
-        <div className={styles.headerContainer}>
-          <button className={styles.menuButton}>
-            <div className={styles.menuBar } onClick={renderNav}></div>
-            <div className={styles.menuBar} onClick={renderNav}></div>
-            <div className={styles.menuBar} onClick={renderNav}></div>
+        <div className={"headerContainer"}>
+          <button className={"menuButton"}>
+            <div className={"menuBar" } onClick={renderNav}></div>
+            <div className={"menuBar"} onClick={renderNav}></div>
+            <div className={"menuBar"} onClick={renderNav}></div>
           </button>
         </div>
       </Fragment>

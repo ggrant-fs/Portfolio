@@ -1,6 +1,7 @@
 import React from 'react';
 import { Fragment ,useState } from 'react';
-import styles from './Hero.module.css';
+// import styles from './Hero.module.css';
+import '../../../index.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import backgroundVideo from '../../../videos/inkinwater.mp4';
@@ -23,9 +24,10 @@ function Hero(props){
         <Fragment>
           <Header renderNav={displayNav}/>
           {showNav && <Nav navState={showNav}/>}
-          <div className={styles.videoContainer}>
+          {/* this is where the animation that displays the name goes */}
+          <div className={"videoContainer"}>
            <video autoPlay muted loop>
-             <source className={styles.source} src={backgroundVideo} type='video/mp4'/>
+             <source className={"source"} src={backgroundVideo} type='video/mp4'/>
            </video>
           </div>
        </Fragment>
