@@ -1,8 +1,8 @@
-@import 'base/typography.module';
-@import 'abstracts/variables.module';
+@import '../abstracts/variables';
+@import '../base/typography';
 
 
-.fullpageNav{
+.fullpage-nav{
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -15,7 +15,7 @@
 }
 
 
-.navItem{
+.nav__item{
     list-style: none;
     text-align: center;
     font: 3.13rem $syncopate;
@@ -27,7 +27,7 @@
 
     a {
         text-decoration: none;
-        color:$nav-color;
+        color:map-get($nav-color,default);
         transition: {
             property: font;
             duration: 0.5s;
@@ -39,7 +39,7 @@
         }
 
         &:hover {
-            color: rgb(248, 245, 245);
+            color: map-get($nav-color,hovered);
             font-size: 3.6rem;
             text-decoration: underline 0.13rem;
         }
@@ -47,34 +47,24 @@
 }
 
 
-.socialLinksContainer{
+.social-links-container{
   margin-top: 1.25rem;
   padding-top:1.25rem;
 
-  .socalLink{
+  .socal__link{
     display:inline-block;
     margin-left: 0.94rem;
 
     a{
-        color:rgba(170, 165, 165, 0.907);
+        color:map-get($nav-color,default);
         text-decoration: underline solid .5px;
         font-family: $syncopate;
     }
 
     &a:hover {
-        color: rgb(248, 245, 245);
+        color: map-get($nav-color,hovered);
     }
  }
 
 }
 
-
-@keyframes title-animation {
-    0%{
-       transform: transformY(10%) 1s ease-in 1s;
-    }
-
-    100%{
-        transform: translateY(50%) 1.5s ease-in ;
-    }
-}

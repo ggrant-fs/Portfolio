@@ -1,6 +1,5 @@
 import React from 'react';
 import { Fragment ,useState } from 'react';
-// import styles from './Hero.module.css';
 import '../../../index.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
@@ -25,7 +24,8 @@ function Hero(props){
           <Header renderNav={displayNav}/>
           {showNav && <Nav navState={showNav}/>}
           {/* this is where the animation that displays the name goes */}
-          <div className={"videoContainer"}>
+          <div className={"name"}></div>
+          <div className={"video-container"}>
            <video autoPlay muted loop>
              <source className={"source"} src={backgroundVideo} type='video/mp4'/>
            </video>

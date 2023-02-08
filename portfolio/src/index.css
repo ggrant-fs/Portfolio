@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -11,8 +13,7 @@ main {
   font-size: 1rem;
 }
 
-
-.headerContainer {
+.header-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,37 +26,42 @@ main {
   border: none;
 }
 
-.menuButton {
+.menu__button {
   border: none;
   background-color: transparent;
 }
 
-.menuBar {
+.menu__bar {
   width: 1.88rem;
   height: 0.22rem;
   background-color: #521b1b;
   margin-top: 0.19rem;
   cursor: pointer;
 }
-.menuBar:hover {
+.menu__bar:hover {
   width: 2rem;
   opacity: 0.5;
-  transition: opacity 500 ease-in;
-  transition-duration: 0.8s;
+  transition: opacity 500 0.8s ease-in;
   background-color: #f47777;
 }
 
-.videoContainer {
+.name {
+  width: 500px;
+  height: 200px;
+  background: red;
+}
+
+.video-container {
   width: 100%;
   height: 100vh;
   z-index: -20;
 }
-.videoContainer video {
+.video-container video {
   width: 105% !important;
   height: auto !important;
 }
 
-.fullpageNav {
+.fullpage-nav {
   display: flex;
   position: fixed;
   flex-direction: column;
@@ -67,47 +73,46 @@ main {
   z-index: 9;
 }
 
-.navItem {
+.nav__item {
   list-style: none;
   text-align: center;
   font: 3.13rem "Syncopate", sans-serif;
 }
-.navItem:nth-child(2) {
+.nav__item:nth-child(2) {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.navItem a {
+.nav__item a {
   text-decoration: none;
   color: rgba(170, 165, 165, 0.907);
   transition-property: font;
   transition-duration: 0.5s;
   transition-timing-function: ease-in;
 }
-.navItem a h4 {
+.nav__item a h4 {
   margin: 0;
 }
-.navItem a:hover {
-  color: rgb(248, 245, 245);
+.nav__item a:hover {
+  color: rgba(170, 165, 165, 0.907);
   font-size: 3.6rem;
   text-decoration: underline 0.13rem;
 }
 
-.socialLinksContainer {
+.social-links-container {
   margin-top: 1.25rem;
   padding-top: 1.25rem;
 }
-.socialLinksContainer .socalLink {
+.social-links-container .socal__link {
   display: inline-block;
   margin-left: 0.94rem;
 }
-.socialLinksContainer .socalLink a {
+.social-links-container .socal__link a {
   color: rgba(170, 165, 165, 0.907);
   text-decoration: underline solid 0.5px;
   font-family: "Syncopate", sans-serif;
 }
-.socialLinksContainer .socalLinka:hover {
-  color: rgb(248, 245, 245);
+.social-links-container .socal__linka:hover {
+  color: rgba(170, 165, 165, 0.907);
 }
-
 
 /*# sourceMappingURL=index.css.map */
