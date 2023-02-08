@@ -1,14 +1,23 @@
 
+
 .name{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    top:20%;
+    left:20%;
     width:500px;
     height: 200px;
     background: red;
+    animation: intro 8s ease-out 0.5 ;
 }
 
 .video-container{
     width:100%;
     height: 100vh;
-    z-index: -20;
+    z-index: -30;
 
     video{
         width:105% !important;
@@ -16,4 +25,16 @@
      }  
 }
    
-
+//this keyframe brings down the intro div
+@keyframes intro{
+    0%{
+      transform: translateY(-100%);
+    }
+    30%{
+        transform: translateY(10%);
+    }
+    
+    100%{
+        transform: translateY(20%);
+    }
+}
