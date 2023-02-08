@@ -2,37 +2,36 @@ import React from 'react';
 import { Fragment } from 'react';
 import {Link} from 'react-router-dom';
 import '../../../index.css';
-// import styles from './Nav.module.css';
 
 const Nav=(props)=> {
    return(
      <Fragment>
-        <div className={"fullpageNav"}>
-            <ul className={"navlist"}>
-                <li className={"navItem"}>
+        <div className={"fullpage-nav"}>
+            <ul className={"nav__list"}>
+                <li className={"nav__item"}>
                   <Link to="#" activeClassName={"active"}>
                     <h4>Featured Work</h4>
                   </Link>
                 </li>
-                <li className={"navItem"}>
+                <li className={"nav__item"}>
                   <Link to="/projects" activeClassName={"active"}>
                     <h4>Portfolio</h4>
                   </Link>
                 </li>
-                <li className={"navItem"}>
+                <li className={"nav__item"}>
                   <Link to="/about" activeClassName={"active"}>
                     <h4>About Me</h4>
                   </Link>
                 </li>
             </ul>
-            <div className={"socialLinksContainer"}>
-              <ul className={"socalLinks"}>
-                <li className={"socalLink"}>
+            <div className={"social-links-container"}>
+              <ul className={"socal__links"}>
+                <li className={"socal__link"}>
                   <Link to={{pathname:"/https://github.com/ggrant-fs"}} target="_blank">
                   <span>LinkedIn</span>
                   </Link>
                 </li>
-                <li className={"socalLink"}>
+                <li className={"socal__link"}>
                   <Link to={{pathname:"/https://github.com/ggrant-fs"}} target="_blank">
                     <snan>GitHub</snan>
                  </Link>
