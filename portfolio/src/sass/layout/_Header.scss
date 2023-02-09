@@ -6,7 +6,6 @@
 .header-container{
     display: flex;
     flex-direction: row;
-    @include prefix-flex-row;
     justify-content: center;
     position: fixed;
     @include size(3.13rem,90vh);
