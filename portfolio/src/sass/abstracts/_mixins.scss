@@ -1,0 +1,13 @@
+@mixin prefix-flex-row {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
