@@ -2,12 +2,12 @@
 
 .intro-container{
     display:flex;
-    @include prefix-flex-row;
-    flex-direction: row;
     position: fixed;
-    @include size(100%,100px);
     top:35%;
-    background-color: white;
+    flex-direction: row;
+    @include prefix-flex-row;
+    @include size(100%,100px);
+    background-color: rgb(197, 209, 196);
     animation: intro 3.2s ease-in  ;
 }
 
@@ -16,13 +16,11 @@
     z-index: -30;
 
     video{
-        width:105% !important;
-        height: auto !important;
+        @include size(105% !important,auto !important)
      }  
 }
    
 //this keyframe brings down the intro div
-
 @keyframes intro{
     from{
         transform: translate(0,-100%) ;
