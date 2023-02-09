@@ -24,7 +24,11 @@ function Hero(props){
           <Header renderNav={displayNav}/>
           {showNav && <Nav navState={showNav}/>}
           {/* this is where the animation that displays the name goes */}
-          <div className={"name"}><div>test</div></div>
+          <div className={"intro-container"}>
+            <div className={"first-name-enter-left"}></div>
+            {/* <div className={"last-name-enter-right"}></div>
+            <div className={"caption"}></div> */}
+          </div>
           <div className={"video-container"}>
            <video autoPlay muted loop>
              <source className={"source"} src={backgroundVideo} type='video/mp4'/>
