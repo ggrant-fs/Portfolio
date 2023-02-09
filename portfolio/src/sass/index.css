@@ -51,7 +51,7 @@ main {
   position: fixed;
   width: 100%;
   height: 100px;
-  background-color: rgb(9, 255, 0);
+  background-color: white;
   animation: intro 8s ease-in;
 }
 
