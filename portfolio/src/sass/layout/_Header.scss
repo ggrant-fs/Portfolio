@@ -1,15 +1,15 @@
 @import '../abstracts/variables';
-
+@import '../abstracts/mixins';
 
 //the headerContaier is a flexbox contaier
 //used as a wrapper for the navbar
 .header-container{
     display: flex;
     flex-direction: row;
+    @include prefix-flex-row;
     justify-content: center;
     position: fixed;
-    width:3.13rem;
-    height:90vh;
+    @include size(3.13rem,90vh);
     top:0;
     left:2%;
     z-index: 10;
@@ -20,12 +20,10 @@
     border:none;
     background-color:transparent;
   }
-  
   // this selector is for the small horizontal 
   //bars that when clicked open the fullpage navigation manu
   .menu__bar{
-    width:1.88rem;
-    height:.22rem;
+    @include size(1.88rem,.22rem);
     background-color: map-get($menuBar-color,default);
     margin-top: .19rem;
     cursor: pointer;
