@@ -10,7 +10,8 @@
     left:20%;
     width:500px;
     height: 200px;
-    background: red;
+    background: blue;
+    // opacity:0;
     animation: intro 8s ease-out 0.5 ;
 }
 
@@ -28,13 +29,21 @@
 //this keyframe brings down the intro div
 @keyframes intro{
     0%{
-      transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity:0;
+        transition: opacity 2s ease-in;
+    
     }
     30%{
         transform: translateY(10%);
+        opacity:0.5;
+        transition: opacity 2s ease-in;
+ 
     }
     
     100%{
         transform: translateY(20%);
+        opacity:1;
+        transition: opacity 2s ease-in;
     }
 }
