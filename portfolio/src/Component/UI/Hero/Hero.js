@@ -28,6 +28,7 @@ function Hero(props){
             <div className={"first-name-enter-left"}>
               <h1>Gary</h1>
             </div>
+            <div className='space-between'></div>
             <div className={"last-name-enter-right"}>
               <h1>Grant</h1>
             </div>

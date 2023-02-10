@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -50,22 +55,26 @@ main {
   flex-direction: row;
   justify-content: center;
   position: fixed;
-  top: 35%;
+  top: 20%;
   width: 100%;
-  height: 100px;
-  animation: intro 3s ease-in;
+  height: 500px;
+  animation: intro 5s ease-in;
 }
-.intro-container .first-name-enter-left,
-.intro-container .last-name-enter-right {
+.intro-container .enter-left-right-default, .intro-container .last-name-enter-right, .intro-container .first-name-enter-left {
   width: 100px;
   height: 100%;
-  color: white;
+  font: 30px "Meddon", cursive;
+  color: rgba(255, 255, 255, 0.322);
 }
 .intro-container .first-name-enter-left {
-  animation: enter_left 3s ease-in;
+  animation: enter_left 5s ease-in;
+}
+.intro-container .space-between {
+  width: 150px;
+  height: 100%;
 }
 .intro-container .last-name-enter-right {
-  animation: enter_right 3s ease-in;
+  animation: enter_right 5s ease-in;
 }
 
 .video-container {
