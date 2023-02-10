@@ -7,10 +7,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: fixed;
     @include size(3.13rem,90vh);
-    top:0;
-    left:2%;
+    @include position-absolute(fixed,0,2%);
     z-index: 10;
     border:none;
   }

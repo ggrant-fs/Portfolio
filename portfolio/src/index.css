@@ -16,14 +16,10 @@ main {
 .header-container {
   display: flex;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   justify-content: center;
-  position: fixed;
   width: 3.13rem;
   height: 90vh;
+  position: fixed;
   top: 0;
   left: 2%;
   z-index: 10;
@@ -51,17 +47,25 @@ main {
 
 .intro-container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   position: fixed;
   top: 35%;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   width: 100%;
   height: 100px;
-  background-color: rgb(197, 209, 196);
-  animation: intro 3.2s ease-in;
+  animation: intro 3s ease-in;
+}
+.intro-container .first-name-enter-left,
+.intro-container .last-name-enter-right {
+  width: 100px;
+  height: 100%;
+  color: white;
+}
+.intro-container .first-name-enter-left {
+  animation: enter_left 3s ease-in;
+}
+.intro-container .last-name-enter-right {
+  animation: enter_right 3s ease-in;
 }
 
 .video-container {
@@ -82,26 +86,38 @@ main {
   1% {
     opacity: 0.1;
   }
-  10% {
-    opacity: 0.5;
+  5% {
+    opacity: 0.3;
   }
   to {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0.8;
+  }
+}
+@keyframes enter_left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes enter_right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 .fullpage-nav {
   display: flex;
   position: fixed;
   flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
   background: linear-gradient(to bottom, rgba(146, 102, 102, 0.6), black);
   z-index: 9;
 }

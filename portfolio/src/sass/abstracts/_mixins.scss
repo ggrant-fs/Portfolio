@@ -1,5 +1,11 @@
-
+// variable for width and height 
 @mixin size($width,$height){
     width: $width;
     height: $height;
+}
+
+@mixin position-absolute($position, $top, $left){
+    position: $position;
+    top:$top;
+    left:$left;
 }
