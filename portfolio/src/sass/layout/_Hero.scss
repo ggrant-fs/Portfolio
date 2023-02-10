@@ -1,5 +1,5 @@
-@import '../abstracts/mixins';
-@import '../base/typography';
+@use '../abstracts/mixins';
+@use '../base/typography';
 
 .intro-container{
     display:flex;
@@ -7,12 +7,12 @@
     justify-content: center;
     position: fixed;
     top:20%;
-    @include size(100%,500px);
+    @include mixins.size(100%,500px);
     animation: intro 5s ease-in ;
     
     .enter-left-right-default{
-        @include size(100px, 100%);
-        font: 30px $meddon;
+        @include mixins.size(100px, 100%);
+        font: 30px typography.$meddon;
         color:rgba(255, 255, 255, 0.322);
     }
 
@@ -22,7 +22,7 @@
     }
 
     .space-between{
-        @include size(150px,100%)
+        @include mixins.size(150px,100%)
     }
     .last-name-enter-right{
         @extend .enter-left-right-default;
@@ -32,11 +32,11 @@
 
 
 .video-container{
-    @include size(100%,100vh);
+    @include mixins.size(100%,100vh);
     z-index: -30;
 
     video{
-        @include size(105% !important,auto !important)
+        @include mixins.size(105% !important,auto !important)
      }  
 }
    
