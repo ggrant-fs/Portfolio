@@ -1,5 +1,6 @@
-@import '../abstracts/variables';
-@import '../base/typography';
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../base/typography';
 
 
 .fullpage-nav{
@@ -8,8 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include size(100%,100%);
-    background: $fullpage-gradient;
+    @include mixins.size(100%,100%);
+    background: variables.$fullpage-gradient;
     z-index: 9;
 }
 
@@ -17,7 +18,7 @@
 .nav__item{
     list-style: none;
     text-align: center;
-    font: 3.13rem $syncopate;
+    font: 3.13rem typography.$syncopate;
 
     &:nth-child(2){
         margin: {
@@ -28,7 +29,7 @@
 
     a {
         text-decoration: none;
-        color:map-get($nav-color,default);
+        color:map-get(variables.$nav-color,default);
         transition: {
             property: font;
             duration: 0.5s;
@@ -40,7 +41,7 @@
         }
 
         &:hover {
-            color: map-get($nav-color,hovered);
+            color: map-get(variables.$nav-color,hovered);
             font-size: 3.6rem;
             text-decoration: underline 0.13rem;
         }
@@ -57,13 +58,13 @@
     margin-left: 0.94rem;
 
     a{
-        color:map-get($nav-color,default);
+        color:map-get(variables.$nav-color,default);
         text-decoration: underline solid .5px;
-        font-family: $syncopate;
+        font-family: typography.$syncopate;
     }
 
     &a:hover {
-        color: map-get($nav-color,hovered);
+        color: map-get(variables.$nav-color,hovered);
     }
  }
 

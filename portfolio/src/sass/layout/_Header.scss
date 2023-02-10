@@ -1,5 +1,5 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 //the headerContaier is a flexbox contaier
 //used as a wrapper for the navbar
@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    @include size(3.13rem,90vh);
-    @include position-absolute(fixed,0,2%);
+    @include mixins.size(3.13rem,90vh);
+    @include mixins.position-absolute(fixed,0,2%);
     z-index: 10;
     border:none;
   }
@@ -20,8 +20,8 @@
   // this selector is for the small horizontal 
   //bars that when clicked open the fullpage navigation manu
   .menu__bar{
-    @include size(1.88rem,.22rem);
-    background-color: map-get($menuBar-color,default);
+    @include mixins.size(1.88rem,.22rem);
+    background-color: map-get(variables.$menuBar-color,default);
     margin-top: .19rem;
     cursor: pointer;
 
@@ -31,7 +31,7 @@
       width:2.0rem;
       opacity:.5;
       transition: opacity 500 0.8s ease-in;
-      background-color: map-get($menuBar-color, hovered)
+      background-color: map-get(variables.$menuBar-color, hovered)
     }
   }
  
