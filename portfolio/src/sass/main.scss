@@ -1,17 +1,17 @@
-@import 'base/typography';
-@import 'base/reset';
+@use 'base/typography';
+@use 'base/reset';
 
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+@use 'abstracts/placeholders';
 
-@import 'layout/Header';
-@import 'layout/Hero';
-@import 'layout/Nav';
+@use 'layout/Header';
+@use 'layout/Hero';
+@use 'layout/Nav';
 
-@import 'pages/AboutMe';
-@import 'pages/Home';
-@import 'pages/projects';
+@use 'pages/AboutMe';
+@use 'pages/Home';
+@use 'pages/projects';
 
 
 
