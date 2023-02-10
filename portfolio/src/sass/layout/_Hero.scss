@@ -1,26 +1,32 @@
 @import '../abstracts/mixins';
+@import '../base/typography';
 
 .intro-container{
     display:flex;
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    top:35%;
-    @include size(100%,100px);
-    animation: intro 3s ease-in ;
+    top:20%;
+    @include size(100%,500px);
+    animation: intro 5s ease-in ;
     
-    .first-name-enter-left,
-    .last-name-enter-right{
+    .enter-left-right-default{
         @include size(100px, 100%);
-        color:white;
-    }
-     
-    .first-name-enter-left{
-        animation: enter_left 3s ease-in;
+        font: 30px $meddon;
+        color:rgba(255, 255, 255, 0.322);
     }
 
+    .first-name-enter-left{
+        @extend .enter-left-right-default;
+        animation: enter_left 5s ease-in;
+    }
+
+    .space-between{
+        @include size(150px,100%)
+    }
     .last-name-enter-right{
-        animation: enter_right 3s ease-in;
+        @extend .enter-left-right-default;
+        animation: enter_right 5s ease-in;
     }
 }
 
