@@ -1,21 +1,9 @@
-*{
-    box-sizing: border-box;
-  }
-  
-  body{
-    margin:0;
-  }
-  
-  main{
-    font-size: 1rem;
-  }
-  
+@import 'base/typography';
+@import 'base/reset';
+
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
-@import 'base/typography';
-
-@import 'base/typography';
 
 @import 'layout/Header';
 @import 'layout/Hero';
