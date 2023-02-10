@@ -2,13 +2,28 @@
 
 .intro-container{
     display:flex;
+    flex-direction: row;
+    justify-content: center;
     position: fixed;
     top:35%;
-    flex-direction: row;
     @include size(100%,100px);
-    background-color: rgb(197, 209, 196);
-    animation: intro 3.2s ease-in  ;
+    animation: intro 3s ease-in ;
+    
+    .first-name-enter-left,
+    .last-name-enter-right{
+        @include size(100px, 100%);
+        color:white;
+    }
+     
+    .first-name-enter-left{
+        animation: enter_left 3s ease-in;
+    }
+
+    .last-name-enter-right{
+        animation: enter_right 3s ease-in;
+    }
 }
+
 
 .video-container{
     @include size(100%,100vh);
@@ -30,12 +45,31 @@
         opacity:0.1;
     }
 
-    10%{
-        opacity:0.5;
+    5%{
+        opacity:0.3;
     }
   
     to{
         transform: translateY(0);
-        opacity:1;
+        opacity:0.8;
+    }
+}
+
+@keyframes enter_left{
+    from {
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes enter_right{
+    from {
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(0);
     }
 }
