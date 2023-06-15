@@ -8,11 +8,11 @@ const Nav=(props)=> {
      <Fragment>
         <div className={"fullpage-nav"}>
             <ul className={"nav__list"}>
-                <li className={"nav__item"}>
+                {/* <li className={"nav__item"}>
                   <Link to="#" activeClassName={"active"}>
                     <h4>Featured Work</h4>
                   </Link>
-                </li>
+                </li> */}
                 <li className={"nav__item"}>
                   <Link to="/projects" activeClassName={"active"}>
                     <h4>Portfolio</h4>
