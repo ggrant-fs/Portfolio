@@ -1,4 +1,8 @@
-//font colors
+//=========font variables=========
+// these variables are used for specific
+// purposes such as hover affects, linear
+// gradient, and default
+//================================
 $menuBar-color:(default:#521b1b,hovered:#f47777);
 $nav-color:(default:rgba(170, 165, 165, 0.907),hovered:rgba(170, 165, 165, 0.907));
-$fullpage-gradient: linear-gradient( to bottom, #92666699, black);
+$fullpage-gradient: linear-gradient( -65deg, #e06868d6, rgb(0, 0, 0));

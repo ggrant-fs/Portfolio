@@ -1,9 +1,16 @@
-// variable for width and height 
+//======================================
+// this mixin acts as a shorthand for 
+// the width and the heign attribute
+//=======================================
 @mixin size($width,$height){
     width: $width;
     height: $height;
 }
 
+//=========================================
+// the purpose of this mixin is to position
+//  the top or bottom nav bar in place
+//==========================================
 @mixin position-absolute($position, $top, $left){
     position: $position;
     top:$top;
