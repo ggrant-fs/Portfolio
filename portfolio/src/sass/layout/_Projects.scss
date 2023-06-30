@@ -5,31 +5,33 @@
     justify-content: center;
     align-items: center;
     height:45px;
-    // background-color: ;
+    background-color: bisque;
 }
-.portfolio-imgs{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
-    height:100vh;
-   background-image:  linear-gradient( -65deg, #e06868d6, rgb(0, 0, 0));;
 
-    %portfolio-imgs-shared{
-     @include mixins.size(24.5rem,15rem)
-    }
+.projects-banner{
+    @include mixins.size(100%,250px);
+    background-color: aqua;
+}
 
-    .portfolio-imgs__1{
-        @extend %portfolio-imgs-shared;
-        .project-img{
-            @extend %portfolio-imgs-shared;
-        }
+.sample-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    %images-extend{
+        @include mixins.size(250px, 230px);
     }
-    .portfolio-imgs__2{
-        @extend %portfolio-imgs-shared;
-        .project-img{
-            @extend %portfolio-imgs-shared;
-        }
+    .project-img{
+        @include mixins.size(270px, 230px);
     }
-
+    .sample-img__1{
+        @include mixins.size(270px, 230px);
+    }
+    .sample-img__2{
+        @include mixins.size(270px, 230px);
+    }
+    .sample-img__3{
+        @include mixins.size(270px, 230px);
+    }
 }
