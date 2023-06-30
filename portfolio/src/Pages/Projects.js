@@ -18,7 +18,10 @@ function Projects (props){
                         <img className='project-img' src='https://i.imgur.com/Al9JO85.jpg'alt=''/>
                     </div>
                 </div>
-                
+                <div className='btn-wrapper'>
+                    <button className='view-live'></button>
+                    <button className='github-btn'></button>
+                </div>
                 <div className="sample-imgs-2">
                     
                 </div>
