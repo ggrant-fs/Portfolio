@@ -187,21 +187,13 @@ main {
   justify-content: space-between;
   width: 100%;
 }
-.sample-imgs .project-img {
+.sample-imgs .sample-img__3, .sample-imgs .sample-img__2, .sample-imgs .sample-img__1, .sample-imgs .project-img {
   width: 270px;
   height: 230px;
 }
-.sample-imgs .sample-img__1 {
-  width: 270px;
-  height: 230px;
-}
-.sample-imgs .sample-img__2 {
-  width: 270px;
-  height: 230px;
-}
-.sample-imgs .sample-img__3 {
-  width: 270px;
-  height: 230px;
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=index.css.map */

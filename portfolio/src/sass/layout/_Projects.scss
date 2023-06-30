@@ -20,18 +20,27 @@
     width: 100%;
     
     %images-extend{
-        @include mixins.size(250px, 230px);
+        @include mixins.size(
+            variables.$img-wth, 
+            variables.$img-ht
+            );
     }
     .project-img{
-        @include mixins.size(270px, 230px);
+        @extend %images-extend;
     }
     .sample-img__1{
-        @include mixins.size(270px, 230px);
+        @extend %images-extend;
     }
     .sample-img__2{
-        @include mixins.size(270px, 230px);
+        @extend %images-extend;
     }
     .sample-img__3{
-        @include mixins.size(270px, 230px);
+        @extend %images-extend;
     }
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: row;
+    
 }
