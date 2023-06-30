@@ -172,19 +172,36 @@ main {
   justify-content: center;
   align-items: center;
   height: 45px;
+  background-color: bisque;
 }
 
-.portfolio-imgs {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.projects-banner {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(-65deg, rgba(224, 104, 104, 0.8392156863), rgb(0, 0, 0));
+  height: 250px;
+  background-color: aqua;
 }
-.portfolio-imgs .portfolio-imgs__2 .project-img, .portfolio-imgs .portfolio-imgs__2, .portfolio-imgs .portfolio-imgs__1 .project-img, .portfolio-imgs .portfolio-imgs__1 {
-  width: 24.5rem;
-  height: 15rem;
+
+.sample-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.sample-imgs .project-img {
+  width: 270px;
+  height: 230px;
+}
+.sample-imgs .sample-img__1 {
+  width: 270px;
+  height: 230px;
+}
+.sample-imgs .sample-img__2 {
+  width: 270px;
+  height: 230px;
+}
+.sample-imgs .sample-img__3 {
+  width: 270px;
+  height: 230px;
 }
 
 /*# sourceMappingURL=index.css.map */
