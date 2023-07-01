@@ -25,22 +25,41 @@
             variables.$img-ht
             );
     }
-    .project-img{
-        @extend %images-extend;
-    }
-    .sample-img__1{
-        @extend %images-extend;
-    }
-    .sample-img__2{
-        @extend %images-extend;
-    }
-    .sample-img__3{
+
+    .project-img,
+    .sample__project__img{
         @extend %images-extend;
     }
 }
 
-.button-wrapper{
-    display: flex;
+.btn-wrapper{
+    display:flex;
     flex-direction: row;
-    
+    align-items: center;
+    justify-content: center;
+    @include mixins.size(100%, 140px);
+    // background-color: antiquewhite;
+
+    .flex-item-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        @include mixins.size(200px, 130px);
+    }
+
+   %btn-styling{
+    @include mixins.size(120px,35px);
+    border: {
+        radius:12px;
+        width:1.5px;
+        style:solid;
+    }
+    cursor: pointer;
+   }
+
+    .view-live,
+    .github-btn{
+        @extend %btn-styling;
+    }
 }

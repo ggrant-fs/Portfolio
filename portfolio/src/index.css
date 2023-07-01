@@ -187,13 +187,35 @@ main {
   justify-content: space-between;
   width: 100%;
 }
-.sample-imgs .sample-img__3, .sample-imgs .sample-img__2, .sample-imgs .sample-img__1, .sample-imgs .project-img {
+.sample-imgs .project-img,
+.sample-imgs .sample__project__img {
   width: 270px;
   height: 230px;
 }
-.button-wrapper {
+.btn-wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 140px;
+}
+.btn-wrapper .flex-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 130px;
+}
+.btn-wrapper .view-live,
+.btn-wrapper .github-btn {
+  width: 120px;
+  height: 35px;
+  border-radius: 12px;
+  border-width: 1.5px;
+  border-style: solid;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
