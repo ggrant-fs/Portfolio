@@ -1,11 +1,20 @@
 @use"../abstracts/mixins";
 @use"../abstracts/variables";
+
+.project-video{
+    display: inline-block;
+    position: relative;
+    width:100%;
+    height: 100vh;
+    z-index: -100;
+}
+
 .page-title{
     display:flex;
     justify-content: center;
     align-items: center;
     height:45px;
-    background-color: bisque;
+    // background-color: bisque;
 }
 
 .projects-banner{
@@ -16,7 +25,7 @@
 .sample-imgs{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     
     %images-extend{
@@ -29,6 +38,8 @@
     .project-img,
     .sample__project__img{
         @extend %images-extend;
+        margin-top: 10px;
+
     }
 }
 
@@ -37,26 +48,33 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    @include mixins.size(100%, 140px);
-    // background-color: antiquewhite;
+    @include mixins.size(100%, 125px);
 
     .flex-item-wrapper{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        @include mixins.size(200px, 130px);
+        @include mixins.size(280px, 130px);
     }
 
    %btn-styling{
     @include mixins.size(120px,35px);
     border: {
-        radius:12px;
+        radius:16px;
         width:1.5px;
-        style:solid;
+        style:none;
     }
+    background-color: black;
+    color:white;
     cursor: pointer;
+    &:active{
+        background-color: rgb(185, 183, 183);
+        color: black;
+    }
    }
+
+
 
     .view-live,
     .github-btn{
