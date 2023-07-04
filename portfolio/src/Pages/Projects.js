@@ -1,4 +1,5 @@
 import React from 'react';
+import projectsBackground from '../videos/inkinwater3.mp4';
 import { Fragment } from 'react';
 
 function Projects (props){
@@ -27,13 +28,13 @@ function Projects (props){
                 <div className="projects-banner"></div>
                 <div className='sample-imgs'>
                     <div className='sample__project__img'>
-                        <img className='project-img' src='https://i.imgur.com/fP50KYd.jpg'alt=''/>
+                        <img className='project-img' src='https://i.imgur.com/2BGExcF.jpg'alt=''/>
                     </div>
                     <div className='sample__project__img'>
-                        <img className='project-img' src='https://i.imgur.com/KrXljXV.jpg'alt=''/>
+                        <img className='project-img' src='https://i.imgur.com/AiFVHuV.jpg'alt=''/>
                     </div>
                     <div className='sample__project__img'>
-                        <img className='project-img' src='https://i.imgur.com/Uzwb4Mo.png?1'alt=''/>
+                        <img className='project-img' src='https://i.imgur.com/nthhDQA.jpg'alt=''/>
                     </div>
                 </div>
                 <div className='btn-wrapper'>
