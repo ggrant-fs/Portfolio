@@ -1,5 +1,5 @@
 import React from 'react';
-import projectsBackground from '../videos/inkinwater3.mp4';
+import {Link} from 'react-router-dom'
 import { Fragment } from 'react';
 
 function Projects (props){
@@ -22,7 +22,9 @@ function Projects (props){
                 <div className='btn-wrapper'>
                     <div className='flex-item-wrapper'>
                       <button className='view-live'>View Live</button>
-                      <button className='github-btn'>Git Hub</button>
+                      <button className='github-btn'>
+                        <Link to={{pathname:"https://github.com/ggrant-fs/Portfolio"}} target="_blank">Git Hub</Link>
+                     </button>
                     </div>
                 </div>            
                 <div className="projects-banner"></div>
@@ -40,7 +42,9 @@ function Projects (props){
                 <div className='btn-wrapper'>
                     <div className='flex-item-wrapper'>
                       <button className='view-live'>View Live</button>
-                      <button className='github-btn'>Git Hub</button>
+                      <button className='github-btn'>
+                        <Link to={{pathname:"https://github.com/ggrant-fs/Tribecca-Arts"}} target="_blank">Git Hub</Link>
+                     </button>
                     </div>
                 </div>
               
