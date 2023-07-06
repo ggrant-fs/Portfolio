@@ -1,12 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 import { Fragment } from 'react';
 
 function Projects (props){
+    
+    const history = useHistory();
     return (
         <Fragment>
             <div>
-                <div className="page-title">Lastest Work</div>
+                <div className="page-title">Lastest Work
+                   <button className="back-btn" onClick={() => history.goBack()}>Back</button>
+                </div>
                 <div className="projects-banner"></div>
                 <div className='sample-imgs'>
                     <div className='sample__project__img'>
