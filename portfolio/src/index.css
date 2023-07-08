@@ -170,7 +170,7 @@ main {
 }
 
 .projects-body {
-  background-color: black;
+  background-color: #000000;
 }
 
 .project-video {
@@ -185,39 +185,38 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45px;
-  margin: 0px;
-  color: white;
+  height: 2.81rem;
+  margin: 0rem;
+  color: #ffffff;
 }
 
 .page-title > h3 {
   display: inline-block;
   position: relative;
   left: 3%;
-  font: 35px "Fasthand", cursive;
+  font: 2.19rem "Fasthand", cursive;
 }
 
 .back-btn {
   display: inline-block;
   position: relative;
-  color: white;
+  color: #ffffff;
   background-color: transparent;
-  border-width: 0.5px;
+  border-width: 0.31rem;
   border-style: solid;
   right: -27%;
-  width: 70px;
+  width: 4.38rem;
   cursor: pointer;
 }
 
 .projects-banner {
   width: 100%;
-  height: 250px;
-  background-color: aqua;
+  height: 15.63rem;
 }
 
 .main-img {
   width: 100%;
-  height: 250px;
+  height: 15.63rem;
 }
 
 .sample-imgs {
@@ -233,7 +232,7 @@ main {
 }
 .sample-imgs .project-img,
 .sample-imgs .sample__project__img {
-  margin-top: 10px;
+  margin-top: 0.63rem;
 }
 
 .btn-wrapper {
@@ -242,40 +241,40 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 125px;
+  height: 7.81rem;
 }
 .btn-wrapper .flex-item-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 280px;
-  height: 130px;
+  width: 17.5rem;
+  height: 8.13rem;
 }
 .btn-wrapper .github-btn > a, .btn-wrapper .view-live,
 .btn-wrapper .github-btn {
-  width: 120px;
-  height: 35px;
-  border-radius: 16px;
-  border-width: 1.5px;
+  width: 7.5rem;
+  height: 2.19rem;
+  border-radius: 1rem;
+  border-width: 0.09rem;
   border-style: none;
-  background-color: rgb(181, 179, 179);
-  font: 15px "Nothing You Could Do", cursive;
-  color: white;
+  background-color: #b5b3b3;
+  font: 0.94rem "Nothing You Could Do", cursive;
+  color: #ffffff;
   cursor: pointer;
 }
 .btn-wrapper .github-btn > a:active, .btn-wrapper .view-live:active,
 .btn-wrapper .github-btn:active {
-  background-color: rgb(185, 183, 183);
-  color: black;
+  background-color: #b9b7b7;
+  color: #000000;
 }
 .btn-wrapper .github-btn > a:hover, .btn-wrapper .view-live:hover,
 .btn-wrapper .github-btn:hover {
-  color: black;
+  color: #000000;
 }
 .github-btn > a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
