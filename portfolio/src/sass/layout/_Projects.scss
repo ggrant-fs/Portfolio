@@ -3,8 +3,7 @@
 @use"../base/typography";
 
 .projects-body{
-   
-    background-color: black;
+    background-color: #000000;
 }
 
 .project-video{
@@ -18,9 +17,9 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    height:45px;
-    margin:0px;
-    color:white;
+    height:2.81rem;
+    margin:0rem;
+    color:#ffffff;
 }
 
 
@@ -28,30 +27,27 @@
     display:inline-block;
     position: relative;
     left:3%;
-    font: 35px typography.$fasthand;
-    // font-size: 35px;
+    font: 2.19rem typography.$fasthand;
 }
 .back-btn{
     display:inline-block;
     position: relative;
-    color: white;
+    color: #ffffff;
     background-color:transparent;
-    border-width: .5px;
+    border-width: 0.31rem;
     border-style: solid;
     right:-27%;
-    width:70px;
+    width:4.38rem;
     cursor: pointer;
     
 }
 
 .projects-banner{
-    @include mixins.size(100%,250px);
-    background-color: aqua;
+    @include mixins.size(100%,15.63rem);
 }
 
 .main-img{
-    @include mixins.size(100%,250px);
-
+    @include mixins.size(100%,15.63rem);
 }
 
 .sample-imgs{
@@ -70,7 +66,7 @@
     .project-img,
     .sample__project__img{
         @extend %images-extend;
-        margin-top: 10px;
+        margin-top: 0.63rem;
 
     }
 }
@@ -80,33 +76,33 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    @include mixins.size(100%, 125px);
+    @include mixins.size(100%, 7.81rem);
 
     .flex-item-wrapper{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        @include mixins.size(280px, 130px);
+        @include mixins.size(17.50rem, 8.13rem);
     }
 
    %btn-styling{
-    @include mixins.size(120px,35px);
+    @include mixins.size(7.50rem,2.19rem);
     border: {
-        radius:16px;
-        width:1.5px;
+        radius:1rem;
+        width:0.09rem;
         style:none;
     }
-    background-color: rgb(181, 179, 179);
-    font: 15px typography.$nothingYouCouldDo;
-    color:white;
+    background-color: #b5b3b3;
+    font: 0.94rem typography.$nothingYouCouldDo;
+    color:#ffffff;
     cursor: pointer;
     &:active{
-        background-color: rgb(185, 183, 183);
-        color: black;
+        background-color: #b9b7b7;
+        color: #000000;
     }
     &:hover{
-        color:black;
+        color:#000000;
     }
    }
 
@@ -121,5 +117,5 @@
 .github-btn > a {
     @extend %btn-styling;
     text-decoration: none;
-    color:white;
+    color:#ffffff;
 }
