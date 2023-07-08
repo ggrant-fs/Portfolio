@@ -7,11 +7,14 @@ function Projects (props){
     const history = useHistory();
     return (
         <Fragment>
-            <div>
-                <div className="page-title">Lastest Work
+            <div className='projects-body'>
+                <div className="page-title">
+                    <h3>Featured Projects</h3>
                    <button className="back-btn" onClick={() => history.goBack()}>Back</button>
                 </div>
-                <div className="projects-banner"></div>
+                <div className="projects-banner">
+                    <img className="main-img"src="https://i.imgur.com/ITRf5Gv.png" alt=""/>
+                </div>
                 <div className='sample-imgs'>
                     <div className='sample__project__img'>
                         <img className='project-img' src='https://i.imgur.com/FE4VuJm.jpg'alt=''/>
@@ -31,7 +34,9 @@ function Projects (props){
                      </button>
                     </div>
                 </div>            
-                <div className="projects-banner"></div>
+                <div className="projects-banner">
+                  <img className="main-img"src="https://i.imgur.com/fouu1AW.png" alt=""/>
+                </div>
                 <div className='sample-imgs'>
                     <div className='sample__project__img'>
                         <img className='project-img' src='https://i.imgur.com/2BGExcF.jpg'alt=''/>

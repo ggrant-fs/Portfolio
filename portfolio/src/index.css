@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -167,6 +169,10 @@ main {
   color: rgba(170, 165, 165, 0.907);
 }
 
+.projects-body {
+  background-color: black;
+}
+
 .project-video {
   display: inline-block;
   position: relative;
@@ -180,12 +186,38 @@ main {
   justify-content: center;
   align-items: center;
   height: 45px;
+  margin: 0px;
+  color: white;
+}
+
+.page-title > h3 {
+  display: inline-block;
+  position: relative;
+  left: 3%;
+  font: 35px "Fasthand", cursive;
+}
+
+.back-btn {
+  display: inline-block;
+  position: relative;
+  color: white;
+  background-color: transparent;
+  border-width: 0.5px;
+  border-style: solid;
+  right: -27%;
+  width: 70px;
+  cursor: pointer;
 }
 
 .projects-banner {
   width: 100%;
   height: 250px;
   background-color: aqua;
+}
+
+.main-img {
+  width: 100%;
+  height: 250px;
 }
 
 .sample-imgs {
@@ -220,21 +252,30 @@ main {
   width: 280px;
   height: 130px;
 }
-.btn-wrapper .view-live,
+.btn-wrapper .github-btn > a, .btn-wrapper .view-live,
 .btn-wrapper .github-btn {
   width: 120px;
   height: 35px;
   border-radius: 16px;
   border-width: 1.5px;
   border-style: none;
-  background-color: black;
+  background-color: rgb(181, 179, 179);
+  font: 15px "Nothing You Could Do", cursive;
   color: white;
   cursor: pointer;
 }
-.btn-wrapper .view-live:active,
+.btn-wrapper .github-btn > a:active, .btn-wrapper .view-live:active,
 .btn-wrapper .github-btn:active {
   background-color: rgb(185, 183, 183);
   color: black;
+}
+.btn-wrapper .github-btn > a:hover, .btn-wrapper .view-live:hover,
+.btn-wrapper .github-btn:hover {
+  color: black;
+}
+.github-btn > a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
