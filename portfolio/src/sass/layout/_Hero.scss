@@ -7,13 +7,13 @@
     justify-content: center;
     position: fixed;
     top:20%;
-    @include mixins.size(100%,500px);
+    @include mixins.size(100%,31.25rem);
     animation: intro 5s ease-in ;
     
     .enter-left-right-default{
-        @include mixins.size(100px, 100%);
-        font: 30px typography.$meddon;
-        color:rgba(255, 255, 255, 0.322);
+        @include mixins.size(6.25rem, 100%);
+        font: 1.88rem typography.$meddon;
+        color:#ffffff52;
     }
 
     .first-name-enter-left{
@@ -22,7 +22,7 @@
     }
 
     .space-between{
-        @include mixins.size(150px,100%)
+        @include mixins.size(9.38rem,100%)
     }
     .last-name-enter-right{
         @extend .enter-left-right-default;
