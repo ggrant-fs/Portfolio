@@ -1,11 +1,16 @@
 @use"../abstracts/mixins";
 @use"../abstracts/variables";
+@use"../base/typography";
+
+.projects-body{
+   
+    background-color: black;
+}
 
 .project-video{
     display: inline-block;
     position: relative;
-    width:100%;
-    height: 100vh;
+    @include mixins.size(100%,100vh);
     z-index: -100;
 }
 
@@ -14,12 +19,39 @@
     justify-content: center;
     align-items: center;
     height:45px;
-    // background-color: bisque;
+    margin:0px;
+    color:white;
+}
+
+
+.page-title > h3{
+    display:inline-block;
+    position: relative;
+    left:3%;
+    font: 35px typography.$fasthand;
+    // font-size: 35px;
+}
+.back-btn{
+    display:inline-block;
+    position: relative;
+    color: white;
+    background-color:transparent;
+    border-width: .5px;
+    border-style: solid;
+    right:-27%;
+    width:70px;
+    cursor: pointer;
+    
 }
 
 .projects-banner{
     @include mixins.size(100%,250px);
     background-color: aqua;
+}
+
+.main-img{
+    @include mixins.size(100%,250px);
+
 }
 
 .sample-imgs{
@@ -65,12 +97,16 @@
         width:1.5px;
         style:none;
     }
-    background-color: black;
+    background-color: rgb(181, 179, 179);
+    font: 15px typography.$nothingYouCouldDo;
     color:white;
     cursor: pointer;
     &:active{
         background-color: rgb(185, 183, 183);
         color: black;
+    }
+    &:hover{
+        color:black;
     }
    }
 
@@ -80,4 +116,10 @@
     .github-btn{
         @extend %btn-styling;
     }
+}
+
+.github-btn > a {
+    @extend %btn-styling;
+    text-decoration: none;
+    color:white;
 }
