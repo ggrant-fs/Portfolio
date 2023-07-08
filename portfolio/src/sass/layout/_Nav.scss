@@ -63,7 +63,7 @@
 
     a{
         color:map-get(variables.$nav-color,default);
-        text-decoration: underline solid .5px;
+        text-decoration: underline solid 0.03rem;
         font-family: typography.$syncopate;
     }
 
