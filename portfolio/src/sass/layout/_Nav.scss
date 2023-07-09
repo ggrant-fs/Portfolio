@@ -4,11 +4,9 @@
 
 
 .fullpage-nav{
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
+    @include mixins.flexbox(flex,column,center);
     align-items: center;
+    position: fixed;
     @include mixins.size(100%,100%);
     background: variables.$fullpage-gradient;
     z-index: 9;

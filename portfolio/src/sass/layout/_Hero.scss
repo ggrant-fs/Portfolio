@@ -2,9 +2,7 @@
 @use '../base/typography';
 
 .intro-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+    @include mixins.flexbox(flex,row,center);
     position: fixed;
     top:20%;
     @include mixins.size(100%,31.25rem);

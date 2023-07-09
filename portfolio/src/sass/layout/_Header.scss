@@ -4,9 +4,7 @@
 //the headerContaier is a flexbox contaier
 //used as a wrapper for the navbar
 .header-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include mixins.flexbox(flex,row,center);
     @include mixins.size(3.13rem,90vh);
     @include mixins.position-absolute(fixed,0,2%);
     z-index: 10;

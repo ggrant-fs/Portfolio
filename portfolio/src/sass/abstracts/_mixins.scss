@@ -16,3 +16,20 @@
     top:$top;
     left:$left;
 }
+
+@mixin relative-left($position){
+    position: relative;
+    left:$position;
+}
+
+@mixin relative-right($position){
+    position: relative;
+    right:$position;
+}
+
+@mixin flexbox($display,$direction,$content){
+    display:$display;
+    flex-direction:$direction;
+    justify-content: $content;
+
+}
