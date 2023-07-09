@@ -1,10 +1,15 @@
 import React from 'react';
+import { Fragment } from 'react';
 
 function AboutMe(props){
     return(
-        <div>
-
-        </div>
+        <Fragment>
+            <div>
+                <header className="AboutMe-header">
+                      
+                </header>
+            </div>
+        </Fragment>
     )
 }
 

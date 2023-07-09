@@ -117,10 +117,10 @@ main {
 }
 .fullpage-nav {
   display: flex;
-  position: fixed;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: linear-gradient(-65deg, rgba(224, 104, 104, 0.8392156863), rgb(0, 0, 0));
@@ -183,6 +183,7 @@ main {
 
 .page-title {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 2.81rem;
@@ -199,13 +200,13 @@ main {
 
 .back-btn {
   display: inline-block;
+  width: 4.38rem;
   position: relative;
-  color: #ffffff;
+  right: -27%;
   background-color: transparent;
   border-width: 0.031rem;
   border-style: solid;
-  right: -27%;
-  width: 4.38rem;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -227,8 +228,8 @@ main {
 }
 .sample-imgs .project-img,
 .sample-imgs .sample__project__img {
-  width: 250px;
-  height: 230px;
+  width: 14.38rem;
+  height: 14.38rem;
 }
 .sample-imgs .project-img,
 .sample-imgs .sample__project__img {
@@ -238,8 +239,8 @@ main {
 .btn-wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 7.81rem;
 }

@@ -14,8 +14,7 @@
 }
 
 .page-title{
-    display:flex;
-    justify-content: center;
+    @include mixins.flexbox(flex,row,center);
     align-items: center;
     height:2.81rem;
     margin:0rem;
@@ -25,19 +24,19 @@
 
 .page-title > h3{
     display:inline-block;
-    position: relative;
-    left:3%;
+    @include mixins.relative-left(3%);
     font: 2.19rem typography.$fasthand;
 }
 .back-btn{
     display:inline-block;
-    position: relative;
-    color: #ffffff;
-    background-color:transparent;
-    border-width: 0.031rem;
-    border-style: solid;
-    right:-27%;
     width:4.38rem;
+    @include mixins.relative-right(-27%);
+    background-color:transparent;
+    border: {
+        width:0.031rem;
+        style:solid;
+    }
+    color: #ffffff;
     cursor: pointer;
     
 }
@@ -51,9 +50,7 @@
 }
 
 .sample-imgs{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include mixins.flexbox(flex,row,space-around);
     width: 100%;
     
     %images-extend{
@@ -72,16 +69,12 @@
 }
 
 .btn-wrapper{
-    display:flex;
-    flex-direction: row;
+    @include mixins.flexbox(flex,row,center);
     align-items: center;
-    justify-content: center;
     @include mixins.size(100%, 7.81rem);
 
     .flex-item-wrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include mixins.flexbox(flex,row,space-around);
         align-items: center;
         @include mixins.size(17.50rem, 8.13rem);
     }
