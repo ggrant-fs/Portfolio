@@ -8,6 +8,7 @@ function AboutMe(props){
                 <header className="AboutMe-header">
                       
                 </header>
+                <div className='profile-img-wrapper'></div>
             </div>
         </Fragment>
     )
