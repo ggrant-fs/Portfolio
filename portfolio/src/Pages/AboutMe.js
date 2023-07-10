@@ -5,10 +5,15 @@ function AboutMe(props){
     return(
         <Fragment>
             <div>
-                <header className="AboutMe-header">
+                <header className="aboutMe-header">
                       
                 </header>
-                <div className='profile-img-wrapper'></div>
+                <div className='aboutMe-img-wrapper'>
+
+                </div>
+                <div className='aboutMe-content'>
+                    
+                </div>
             </div>
         </Fragment>
     )
