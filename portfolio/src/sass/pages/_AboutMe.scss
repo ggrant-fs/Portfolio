@@ -1,5 +1,7 @@
+@use"../abstracts/mixins";
 
-
-// .AboutMe-header{
-
-// }
+.AboutMe-header{
+    @include mixins.position-absolute(fixed,0,0);
+    @include mixins.size(100%, 2.81rem);
+  background-color: aqua;
+}
