@@ -286,6 +286,11 @@ main {
   height: 2.81rem;
   background-color: aqua;
 }
+.aboutMe-header .aboutMe__back__btn {
+  position: relative;
+  left: 90%;
+  top: 15px;
+}
 
 .aboutMe-img-wrapper {
   display: inline-block;
