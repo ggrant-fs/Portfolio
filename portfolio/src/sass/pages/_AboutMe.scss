@@ -10,15 +10,38 @@
     top:15px;
   }
 }
-.aboutMe-img-wrapper{
-    display:inline-block;
-    @include mixins.size(46%,100vh);
-    background-color:red;
-}
 
-.aboutMe-content{
-    display:inline-block;
-    @include mixins.size(50%,100vh);
-    margin-left:30px;
+.aboutMe-container{
+  @include mixins.flexbox(flex,row,center);
+  @include mixins.size(100%,100vh);
+  background-color: green;
+  
+  .aboutMe__img{
+   @include mixins.size(40%,100vh);
+   background-color: brown;
+  }
+
+  .aboutMe__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @include mixins.size(40%,100vh);
     background-color: yellow;
+  }
+
+  .aboutMe__content > .space-between{
+     height:20px;
+  }
+
+  .space-between{
+    @include mixins.size(2%,100vh)
+  }
+
+  .aboutMe__title{
+    height:30px;
+    font-size:50px;
+  }
+
+ 
 }
