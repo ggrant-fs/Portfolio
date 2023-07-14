@@ -1,4 +1,5 @@
 @use"../abstracts/mixins";
+@use"../base/typography";
 
 .aboutMe-header{
     @include mixins.position-absolute(fixed,0,0);
@@ -7,14 +8,13 @@
 
   .aboutMe__back__btn{
     @include mixins.relative-left(90%);
-    top:15px;
+    top:0.94rem;
   }
 }
 
 .aboutMe-container{
   @include mixins.flexbox(flex,row,center);
   @include mixins.size(100%,100vh);
-  background-color: green;
   
   .aboutMe__img{
    @include mixins.size(40%,100vh);
@@ -22,26 +22,30 @@
   }
 
   .aboutMe__content{
-    display: flex;
-    flex-direction: column;
+    @include mixins.flexbox(flex,column,flex-start);
     align-items: center;
-    justify-content: flex-start;
     @include mixins.size(40%,100vh);
-    background-color: yellow;
   }
 
   .aboutMe__content > .space-between{
-     height:20px;
+     height:1.25rem;
   }
 
   .space-between{
-    @include mixins.size(2%,100vh)
+    @include mixins.size(2%,100vh);
   }
 
   .aboutMe__title{
-    height:30px;
-    font-size:50px;
+    height:1.88rem;
+    font: 3.13rem typography.$aboutMeFont;
   }
 
- 
+  .aboutMe__subtitle{
+    font-family: typography.$aboutMeFont;
+  }
+
+ .aboutMe__details > p {
+  width:16.88rem;
+  font: 0.94rem typography.$aboutMeFont;
+ }
 }

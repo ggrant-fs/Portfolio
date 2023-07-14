@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -289,7 +290,7 @@ main {
 .aboutMe-header .aboutMe__back__btn {
   position: relative;
   left: 90%;
-  top: 15px;
+  top: 0.94rem;
 }
 
 .aboutMe-container {
@@ -298,7 +299,6 @@ main {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: green;
 }
 .aboutMe-container .aboutMe__img {
   width: 40%;
@@ -308,22 +308,28 @@ main {
 .aboutMe-container .aboutMe__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
   width: 40%;
   height: 100vh;
-  background-color: yellow;
 }
 .aboutMe-container .aboutMe__content > .space-between {
-  height: 20px;
+  height: 1.25rem;
 }
 .aboutMe-container .space-between {
   width: 2%;
   height: 100vh;
 }
 .aboutMe-container .aboutMe__title {
-  height: 30px;
-  font-size: 50px;
+  height: 1.88rem;
+  font: 3.13rem "Goudy Bookletter 1911";
+}
+.aboutMe-container .aboutMe__subtitle {
+  font-family: "Goudy Bookletter 1911";
+}
+.aboutMe-container .aboutMe__details > p {
+  width: 16.88rem;
+  font: 0.94rem "Goudy Bookletter 1911";
 }
 
 /*# sourceMappingURL=index.css.map */
