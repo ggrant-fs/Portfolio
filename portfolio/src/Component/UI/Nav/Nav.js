@@ -18,11 +18,11 @@ const Nav=(props)=> {
                     <h4>Portfolio</h4>
                   </Link>
                 </li>
-                <li className={"nav__item"}>
+                {/* <li className={"nav__item"}>
                   <Link to="/about" activeClassName={"active"}>
                     <h4>About Me</h4>
                   </Link>
-                </li>
+                </li> */}
             </ul>
             <div className={"social-links-container"}>
               <ul className={"socal__links"}>

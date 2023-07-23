@@ -23,7 +23,6 @@ function Hero(props){
         <Fragment>
           <Header renderNav={displayNav}/>
           {showNav && <Nav navState={showNav}/>}
-          {/* this is where the animation that displays the name goes */}
           <div className={"intro-container"}>
             <div className={"first-name-enter-left"}>
               <h1>Gary</h1>
@@ -32,7 +31,6 @@ function Hero(props){
             <div className={"last-name-enter-right"}>
               <h1>Grant</h1>
             </div>
-            {/* <div className={"caption"}></div> */}
           </div>
           <div className={"video-container"}>
            <video autoPlay muted loop>

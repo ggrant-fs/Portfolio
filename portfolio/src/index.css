@@ -285,7 +285,7 @@ main {
   left: 0;
   width: 100%;
   height: 2.81rem;
-  background-color: aqua;
+  background-color: #000000;
 }
 .aboutMe-header .aboutMe__back__btn {
   position: relative;
@@ -293,43 +293,28 @@ main {
   top: 0.94rem;
 }
 
-.aboutMe-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.aboutMe-title {
+  position: relative;
+  width: 170px;
+  top: 40vh;
+  left: 42vw;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.aboutMe-title > h1 {
+  margin: 0;
+}
+
+.aboutMe-banner {
+  width: 100vw;
+  height: 100%;
+  z-index: -30;
+}
+
+.aboutMe-banner > img {
   width: 100%;
-  height: 100vh;
-}
-.aboutMe-container .aboutMe__img {
-  width: 40%;
-  height: 100vh;
-  background-color: brown;
-}
-.aboutMe-container .aboutMe__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 40%;
-  height: 100vh;
-}
-.aboutMe-container .aboutMe__content > .space-between {
-  height: 1.25rem;
-}
-.aboutMe-container .space-between {
-  width: 2%;
-  height: 100vh;
-}
-.aboutMe-container .aboutMe__title {
-  height: 1.88rem;
-  font: 3.13rem "Goudy Bookletter 1911";
-}
-.aboutMe-container .aboutMe__subtitle {
-  font-family: "Goudy Bookletter 1911";
-}
-.aboutMe-container .aboutMe__details > p {
-  width: 16.88rem;
-  font: 0.94rem "Goudy Bookletter 1911";
+  height: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

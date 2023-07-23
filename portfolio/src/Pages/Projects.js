@@ -50,8 +50,8 @@ function Projects (props){
                 </div>
                 <div className='btn-wrapper'>
                     <div className='flex-item-wrapper'>
-                      <button className='view-live'>View Live</button>
-                      <button className='github-btn'>
+                      <button className='view-live'>Coming Soon</button>
+                      <button className='github-btn' disabled={true}>
                         <Link to={{pathname:"https://github.com/ggrant-fs/Tribecca-Arts"}} target="_blank">Git Hub</Link>
                      </button>
                     </div>
