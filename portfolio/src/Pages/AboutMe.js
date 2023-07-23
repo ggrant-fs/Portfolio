@@ -1,6 +1,5 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
-import city from '../videos/cityLandscape.mp4';
 import { Fragment } from 'react';
 
 function AboutMe(props){
