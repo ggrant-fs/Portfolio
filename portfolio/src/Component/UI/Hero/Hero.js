@@ -29,7 +29,7 @@ function Hero(props){
             </div>
             <div className='space-between'></div>
             <div className={"last-name-enter-right"}>
-              <h1>Grant</h1>
+              <h1>G</h1>
             </div>
           </div>
           <div className={"video-container"}>
