@@ -34,10 +34,10 @@ main {
 }
 
 .menu__bar {
-  width: 1.88rem;
-  height: 0.22rem;
-  background-color: #521b1b;
-  margin-top: 0.19rem;
+  width: 3.9rem;
+  height: 0.42rem;
+  background-color: yellow;
+  margin-top: 0.5rem;
   cursor: pointer;
 }
 .menu__bar:hover {

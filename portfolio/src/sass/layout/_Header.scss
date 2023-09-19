@@ -19,7 +19,8 @@
   //bars that when clicked open the fullpage navigation manu
   .menu__bar{
     @include mixins.size(3.9rem,0.42rem);
-    background-color: map-get(variables.$menuBar-color,default);
+    // background-color: map-get(variables.$menuBar-color,default);
+    background-color: yellow;
     margin-top: .5rem;
     cursor: pointer;
 
