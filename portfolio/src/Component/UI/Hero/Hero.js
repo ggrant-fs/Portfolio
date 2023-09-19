@@ -3,7 +3,7 @@ import { Fragment ,useState } from 'react';
 import '../../../index.css';
 import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
-import backgroundVideo from '../../../videos/inkinwater.mp4';
+import backgroundVideo from '../../../videos/inkwater.mp4';
 
 function Hero(props){
   const [showNav, setShowNav] =useState(false);
