@@ -1,16 +1,16 @@
 {
-  "main.css": "/static/css/main.af7f8658.chunk.css",
-  "main.js": "/static/js/main.fde0be3c.chunk.js",
-  "main.js.map": "/static/js/main.fde0be3c.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.bf02eaaa.js",
-  "runtime~main.js.map": "/static/js/runtime~main.bf02eaaa.js.map",
-  "static/js/2.8438ff96.chunk.js": "/static/js/2.8438ff96.chunk.js",
-  "static/js/2.8438ff96.chunk.js.map": "/static/js/2.8438ff96.chunk.js.map",
-  "static/js/3.a772fac8.chunk.js": "/static/js/3.a772fac8.chunk.js",
-  "static/js/3.a772fac8.chunk.js.map": "/static/js/3.a772fac8.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.38fc70912cc5811c294f8677ca8c7c6d.js": "/precache-manifest.38fc70912cc5811c294f8677ca8c7c6d.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.af7f8658.chunk.css.map": "/static/css/main.af7f8658.chunk.css.map",
-  "static/media/inkinwater.mp4": "/static/media/inkinwater.b2548816.mp4"
+  "files": {
+    "main.css": "/static/css/main.3baefe21.css",
+    "main.js": "/static/js/main.6fabc3ec.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/inkinwater.mp4": "/static/media/inkinwater.73a673f61933a53a8e4a.mp4",
+    "index.html": "/index.html",
+    "main.3baefe21.css.map": "/static/css/main.3baefe21.css.map",
+    "main.6fabc3ec.js.map": "/static/js/main.6fabc3ec.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3baefe21.css",
+    "static/js/main.6fabc3ec.js"
+  ]
 }
