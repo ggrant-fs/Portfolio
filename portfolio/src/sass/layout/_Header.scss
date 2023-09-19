@@ -18,9 +18,9 @@
   // this selector is for the small horizontal 
   //bars that when clicked open the fullpage navigation manu
   .menu__bar{
-    @include mixins.size(1.88rem,.22rem);
+    @include mixins.size(3.9rem,0.42rem);
     background-color: map-get(variables.$menuBar-color,default);
-    margin-top: .19rem;
+    margin-top: .5rem;
     cursor: pointer;
 
   //this hover effect changes the opacity and the with of 
