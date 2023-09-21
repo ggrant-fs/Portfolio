@@ -131,7 +131,7 @@ main {
 .nav__item {
   list-style: none;
   text-align: center;
-  font: 3.13rem "Syncopate", sans-serif;
+  font: 5rem "Syncopate", sans-serif;
 }
 .nav__item:nth-child(2) {
   margin-top: 1.25rem;
