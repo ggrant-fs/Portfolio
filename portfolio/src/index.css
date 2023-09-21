@@ -139,7 +139,7 @@ main {
 }
 .nav__item a {
   text-decoration: none;
-  color: green;
+  color: rgba(170, 165, 165, 0.907);
   transition-property: font;
   transition-duration: 0.5s;
   transition-timing-function: ease-in;
@@ -149,7 +149,7 @@ main {
 }
 .nav__item a:hover {
   color: rgba(170, 165, 165, 0.907);
-  font-size: 3.6rem;
+  font-size: 7rem;
   text-decoration: underline 0.13rem;
 }
 
