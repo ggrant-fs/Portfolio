@@ -71,7 +71,7 @@
 .btn-wrapper{
     @include mixins.flexbox(flex,row,center);
     align-items: center;
-    @include mixins.size(100%, 7.81rem);
+    @include mixins.size(100%, 8.81rem);
 
     .flex-item-wrapper{
         @include mixins.flexbox(flex,row,space-around);

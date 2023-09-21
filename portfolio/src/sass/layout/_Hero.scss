@@ -10,13 +10,14 @@
     
     .enter-left-right-default{
         @include mixins.size(6.25rem, 100%);
-        font: 1.88rem typography.$meddon;
+        font: 2.25rem typography.$meddon;
         color:#ffffff52;
     }
 
     .first-name-enter-left{
         @extend .enter-left-right-default;
         animation: enter_left 5s ease-in;
+        margin-right:150px;
     }
 
     .space-between{

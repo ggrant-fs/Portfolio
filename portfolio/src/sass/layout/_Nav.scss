@@ -31,7 +31,8 @@
 // ============================================
     a {
         text-decoration: none;
-        color:map-get(variables.$nav-color,default);
+        // color:map-get(variables.$nav-color,default);
+        color:green;
         transition: {
             property: font;
             duration: 0.5s;

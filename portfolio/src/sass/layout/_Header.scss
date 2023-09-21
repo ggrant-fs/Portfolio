@@ -25,11 +25,11 @@
 
   //this hover effect changes the opacity and the with of 
   //div when hovered
-    &:hover{
-      width:2.0rem;
-      opacity:.5;
-      transition: opacity 500 0.8s ease-in;
-      background-color: map-get(variables.$menuBar-color, hovered)
-    }
+  .menu__bar:hover{
+    // width:500px;
+    opacity:.5;
+    transition: opacity 500 0.9s ease-in;
+    background-color: map-get(variables.$menuBar-color, hovered)
   }
+}
  

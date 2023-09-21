@@ -40,10 +40,9 @@ main {
   margin-top: 0.5rem;
   cursor: pointer;
 }
-.menu__bar:hover {
-  width: 2rem;
+.menu__bar .menu__bar:hover {
   opacity: 0.5;
-  transition: opacity 500 0.8s ease-in;
+  transition: opacity 500 0.9s ease-in;
   background-color: #f47777;
 }
 
@@ -60,11 +59,12 @@ main {
 .intro-container .enter-left-right-default, .intro-container .last-name-enter-right, .intro-container .first-name-enter-left {
   width: 6.25rem;
   height: 100%;
-  font: 1.88rem "Meddon", cursive;
+  font: 2.25rem "Meddon", cursive;
   color: rgba(255, 255, 255, 0.3215686275);
 }
 .intro-container .first-name-enter-left {
   animation: enter_left 5s ease-in;
+  margin-right: 150px;
 }
 .intro-container .space-between {
   width: 9.38rem;
@@ -139,7 +139,7 @@ main {
 }
 .nav__item a {
   text-decoration: none;
-  color: rgba(170, 165, 165, 0.907);
+  color: green;
   transition-property: font;
   transition-duration: 0.5s;
   transition-timing-function: ease-in;
@@ -243,7 +243,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 7.81rem;
+  height: 8.81rem;
 }
 .btn-wrapper .flex-item-wrapper {
   display: flex;
