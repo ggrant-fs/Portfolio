@@ -188,7 +188,7 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 2.81rem;
+  height: 5rem;
   margin: 0rem;
   color: #ffffff;
 }
@@ -197,12 +197,13 @@ main {
   display: inline-block;
   position: relative;
   left: 3%;
-  font: 2.19rem "Fasthand", cursive;
+  font: 3.5rem "Fasthand", cursive;
 }
 
 .back-btn {
   display: inline-block;
-  width: 4.38rem;
+  width: 4.5rem;
+  height: 2.2rem;
   position: relative;
   right: -27%;
   background-color: transparent;
@@ -219,7 +220,7 @@ main {
 
 .main-img {
   width: 100%;
-  height: 15.63rem;
+  height: 30rem;
 }
 
 .sample-imgs {
@@ -251,18 +252,18 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 21rem;
+  width: 25rem;
   height: 8.13rem;
 }
 .btn-wrapper .github-btn > a, .btn-wrapper .view-live,
 .btn-wrapper .github-btn {
-  width: 7.5rem;
-  height: 2.19rem;
+  width: 10rem;
+  height: 3.5rem;
   border-radius: 1rem;
   border-width: 0.09rem;
   border-style: none;
   background-color: #b5b3b3;
-  font: 0.94rem "Nothing You Could Do", cursive;
+  font: 3.5rem "Nothing You Could Do", cursive;
   color: #ffffff;
   cursor: pointer;
 }

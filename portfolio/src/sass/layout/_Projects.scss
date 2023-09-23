@@ -16,7 +16,7 @@
 .page-title{
     @include mixins.flexbox(flex,row,center);
     align-items: center;
-    height:2.81rem;
+    height:5rem;
     margin:0rem;
     color:#ffffff;
 }
@@ -25,11 +25,12 @@
 .page-title > h3{
     display:inline-block;
     @include mixins.relative-left(3%);
-    font: 2.19rem typography.$fasthand;
+    font: 3.5rem typography.$fasthand;
 }
 .back-btn{
     display:inline-block;
-    width:4.38rem;
+    width:4.5rem;
+    height:2.2rem;
     @include mixins.relative-right(-27%);
     background-color:transparent;
     border: {
@@ -46,7 +47,7 @@
 }
 
 .main-img{
-    @include mixins.size(100%,15.63rem);
+    @include mixins.size(100%,30rem);
 }
 
 .sample-imgs{
@@ -76,18 +77,18 @@
     .flex-item-wrapper{
         @include mixins.flexbox(flex,row,space-between);
         align-items: center;
-        @include mixins.size(21rem, 8.13rem);
+        @include mixins.size(25rem, 8.13rem);
     }
 
    %btn-styling{
-    @include mixins.size(7.50rem,2.19rem);
+    @include mixins.size(10rem,3.5rem);
     border: {
         radius:1rem;
         width:0.09rem;
         style:none;
     }
     background-color: #b5b3b3;
-    font: 0.94rem typography.$nothingYouCouldDo;
+    font: 3.5rem typography.$nothingYouCouldDo;
     color:#ffffff;
     cursor: pointer;
     &:active{
