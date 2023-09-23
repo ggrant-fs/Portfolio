@@ -33,7 +33,7 @@ const Nav=(props)=> {
                 </li>
                 <li className={"socal__link"}>
                   <Link to={{pathname:"https://github.com/ggrant-fs"}} target="_blank">
-                    <snan>GitHub</snan>
+                    <span>GitHub</span>
                  </Link>
                 </li>
               </ul>

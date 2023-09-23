@@ -58,6 +58,7 @@
   .socal__link{
     display:inline-block;
     margin-left: 0.94rem;
+    font-size:2rem;
 
     a{
         color:map-get(variables.$nav-color,default);

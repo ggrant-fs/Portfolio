@@ -160,6 +160,7 @@ main {
 .social-links-container .socal__link {
   display: inline-block;
   margin-left: 0.94rem;
+  font-size: 2rem;
 }
 .social-links-container .socal__link a {
   color: rgba(170, 165, 165, 0.907);
