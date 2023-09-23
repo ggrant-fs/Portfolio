@@ -42,7 +42,7 @@
 }
 
 .projects-banner{
-    @include mixins.size(100%,15.63rem);
+    @include mixins.size(100%,30rem);
 }
 
 .main-img{
@@ -74,9 +74,9 @@
     @include mixins.size(100%, 8.81rem);
 
     .flex-item-wrapper{
-        @include mixins.flexbox(flex,row,space-around);
+        @include mixins.flexbox(flex,row,space-between);
         align-items: center;
-        @include mixins.size(17.50rem, 8.13rem);
+        @include mixins.size(21rem, 8.13rem);
     }
 
    %btn-styling{
